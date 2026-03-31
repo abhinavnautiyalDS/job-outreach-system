@@ -1,12 +1,18 @@
-def generate_email(name, company, template_path):
+import random
 
-    with open(template_path, "r") as f:
-        template = f.read()
+templates = [
+    ("A", "templates/template_A.txt"),
+    ("B", "templates/template_B.txt")
+]
 
-    template = template.replace("{name}", name)
-    template = template.replace("{company}", company)
+def generate_email(name, company):
 
-    return template
+    template_id, path = random.choice(templates)
 
-email = generate_email("Rahul","ABC Tech","templates/template_ml.txt")
-print(email)
+    with open(path, "r") as f:
+        content = f.read()
+
+    content = content.replace("{name}", name)
+    content = content.replace("{company}", company)
+
+    return content, template_id
