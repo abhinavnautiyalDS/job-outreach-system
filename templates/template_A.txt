@@ -1,0 +1,14 @@
+Hi {name},
+
+I hope you're doing well.
+
+I’m Abhinav Nautiyal, an AI / ML engineer working on projects involving multimodal AI systems and machine learning pipelines.
+
+Portfolio:
+https://abhinavnautiyalds.github.io/PortfolioWebsite/
+
+Would it make sense to share my resume if there are relevant AI / ML roles at {company}?
+
+Best regards  
+Abhinav Nautiyal  
+Phone: +91 XXXXX XXXXX
