@@ -1,0 +1,19 @@
+async function loadStats(){
+
+const response = await fetch("../dashboard/stats.json");
+
+const data = await response.json();
+
+document.getElementById("emails").innerText = data.emails_sent;
+
+document.getElementById("templateA").innerText = data.template_A;
+
+document.getElementById("templateB").innerText = data.template_B;
+
+document.getElementById("templateC").innerText = data.template_C;
+
+document.getElementById("responses").innerText = data.responses;
+
+}
+
+loadStats();
